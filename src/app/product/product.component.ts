@@ -30,6 +30,8 @@ export class ProductComponent implements DoCheck {
 
     @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
+    today = new Date();
+
     constructor(){
         console.log('1. constructor');
     }
